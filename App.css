@@ -1,0 +1,43 @@
+* { box-sizing: border-box; font-family: 'Pretendard', sans-serif; }
+body { margin: 0; background-color: #f4f6f9; color: #333; }
+.app-container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+.app-header { background-color: #1a365d; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; text-align: center; }
+.app-header h1 { margin: 0 0 10px 0; }
+.app-header p { margin: 0; color: #a0aec0; }
+.main-content { display: grid; grid-template-columns: 250px 1fr 300px; gap: 20px; }
+aside { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.tracer-list { display: flex; flex-direction: column; gap: 10px; }
+.tracer-btn { padding: 12px; border: 1px solid #e2e8f0; background: white; border-radius: 6px; cursor: pointer; text-align: left; transition: all 0.2s; }
+.tracer-btn:hover { background: #edf2f7; }
+.tracer-btn.active { border-color: #3182ce; background: #ebf8ff; box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2); }
+.tracer-btn strong { display: block; margin-bottom: 4px; color: #2d3748; }
+.tracer-btn span { font-size: 0.85em; color: #718096; }
+.controls { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
+.progress-bar-container { height: 8px; background: #e2e8f0; border-radius: 4px; margin: 10px 0; overflow: hidden; }
+.progress-bar { height: 100%; background: #38a169; transition: width 0.1s linear; }
+.button-group { display: flex; gap: 10px; }
+.start-btn, .reset-btn { flex: 1; padding: 10px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; color: white; }
+.start-btn { background: #3182ce; }
+.reset-btn { background: #718096; }
+.center-panel { background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+.tabs { display: flex; border-bottom: 1px solid #e2e8f0; }
+.tab { flex: 1; padding: 15px; background: none; border: none; cursor: pointer; font-weight: bold; color: #718096; }
+.tab.active { color: #3182ce; border-bottom: 3px solid #3182ce; }
+.tab-content { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+.pathway-view { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.canvas-container { flex: 1; background: #edf2f7; border-radius: 8px; display: flex; justify-content: center; align-items: center; min-height: 400px; position: relative; }
+.silhouette-placeholder { width: 150px; height: 300px; background: #cbd5e0; border-radius: 75px; position: relative; }
+.glowing-dot { position: absolute; left: 50%; width: 20px; height: 20px; background: red; border-radius: 50%; transform: translate(-50%, -50%); box-shadow: 0 0 10px red; }
+.stage-card { background: #ebf8ff; padding: 20px; border-radius: 8px; border-left: 4px solid #3182ce; }
+.stage-card h4 { margin: 0 0 10px 0; color: #2b6cb0; }
+.stage-card p { margin: 0; color: #2d3748; }
+.prep-view ul { padding-left: 20px; }
+.prep-view li { margin-bottom: 10px; color: #4a5568; line-height: 1.5; }
+.clinical-image-box { background: black; border-radius: 8px; overflow: hidden; margin-bottom: 20px; min-height: 200px; display: flex; align-items: center; justify-content: center; }
+.clinical-image-box img { width: 100%; height: auto; }
+.info-box h4 { margin: 15px 0 5px 0; color: #2d3748; font-size: 0.95em; }
+.info-box p { margin: 0; font-size: 0.9em; color: #4a5568; }
+.suv-list { list-style: none; padding: 0; margin: 0; }
+.suv-list li { display: flex; justify-content: space-between; font-size: 0.85em; padding: 8px 0; border-bottom: 1px solid #edf2f7; }
+.suv-list li strong { color: #4a5568; }
+.suv-list li span { color: #3182ce; font-weight: bold; }
